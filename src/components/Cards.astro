@@ -1,0 +1,21 @@
+---
+import Card from "./Card.astro";
+---
+
+<ul class="cards">
+  <Card
+    title="Formación"
+    text="Universidad Católica Los Ángeles de Chimbote, Chimbote"
+    span="Ingeniería de Sistemas"
+  />
+
+  <Card title="Experiencia" text="Chimboteros: FullStack" span="2021 - 2023" />
+</ul>
+
+<style>
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+</style>
